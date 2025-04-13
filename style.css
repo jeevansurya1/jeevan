@@ -415,16 +415,81 @@ h2 {
         border-radius: 15px;
     }
     
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container {
+        order: 1;
+    }
+
+    .game-sidebar {
+        order: 2;
+        position: static;
+        transform: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .ai-sidebar {
+        order: 3;
+        position: static;
+        transform: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .news-container {
+        order: 4;
+        position: static;
+    }
+
     .header-logo, .whatsapp-logo {
+        order: 6;  /* Changed from 5 to 6 to make it appear last */
         position: static;
         width: 80px;
         height: 80px;
         margin: 0 auto 15px;
     }
-    
-    .title-container {
+
+    .wrapper {
+        display: flex;
         flex-direction: column;
-        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grid-container {
+        order: 1;
+    }
+
+    .game-sidebar {
+        order: 2;
+    }
+
+    .ai-sidebar {
+        order: 3;
+    }
+
+    .news-container {
+        order: 4;
+    }
+
+    .title-container {
+        order: 5;
     }
     
     .announcement-box {
